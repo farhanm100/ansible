@@ -3,3 +3,7 @@
   tasks:
   - name: Hostname
     command: hostname
+    register: _host
+  - name: print
+    debug:
+      var: _host
